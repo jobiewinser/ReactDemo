@@ -1,11 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from '../resources/logo.svg';
 import './App.css';
 
 function App() {
+
+
+
+
+  let myNewP = document.createElement("h1");
+  myNewP.innerHTML = "This is a paragraph.";
+
+
   return (
-    <div className="App">
-      <header className="App-header">
+
+      <div className="App">
+        {myNewP.innerText}
+
+        <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
